@@ -1,0 +1,38 @@
+# Device configuration, credentials, and flash backups
+.env
+.env.*
+secrets.py
+settings.toml
+device.local*
+**/nvs.bin
+**/*private-backup*/
+logs/
+backups/
+
+# Compiler downloads and generated firmware
+.toolchain/
+build/
+builds/
+**/build/
+firmware*/
+latest-build.txt
+*.elf
+*.map
+*.uf2
+*.zip
+*.bin
+# These three reviewed bitmap font atlases are application assets.
+!CIRCUITPY/lcars/antonio12.bin
+!CIRCUITPY/lcars/antonio16.bin
+!CIRCUITPY/lcars/antonio24.bin
+
+# Generated previews and editor/runtime files
+design/lcars-*.png
+design/*.svg
+__pycache__/
+*.py[cod]
+.DS_Store
+._*
+.venv/
+.vscode/
+
